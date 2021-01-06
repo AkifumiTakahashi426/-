@@ -13,7 +13,7 @@ public class ScoreReadCSV {
 		System.out.println(score);
 		String[] scores = getCSVArray(score);
 		int total = getTotal(scores);
-		int avg=total/scores.length;//合計÷スコアの数
+		double avg=total/scores.length;//合計÷スコアの数
 		showResult(total,avg);
 
 	}
@@ -54,7 +54,7 @@ public class ScoreReadCSV {
 	}
 
 	//結果表示
-	public static void showResult(int sum,int avg) {
+	public static void showResult(int sum,double avg) {
 		System.out.println("合計は：" + sum);
 		System.out.println("平均は：" + avg);
 
